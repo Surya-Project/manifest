@@ -89,7 +89,7 @@
   <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="sapphire-865" />
 
   <!-- Manifest -->
-  <project path="manifest" name="manifest" remote="surya-project" />
+  <project path="manifest" name="manifest" remote="surya-project" revision="bengal"  />
 
   <!-- Packages (AOSP) -->
   <remove-project name="platform/packages/providers/MediaProvider" />
