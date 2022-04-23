@@ -79,9 +79,17 @@
   <!-- Hardware -->
   <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="AOSPA/android_hardware_libhardware" remote="aospa" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="sapphire-865" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="sapphire-865" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="sapphire-865" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="sapphire-865" />
 
   <!-- Manifest -->
-  <project path="manifest" name="AOSPA/manifest" remote="aospa" />
+  <project path="manifest" name="manifest" remote="surya-project" />
 
   <!-- Packages (AOSP) -->
   <remove-project name="platform/packages/providers/MediaProvider" />
@@ -103,6 +111,7 @@
   <project path="packages/apps/Launcher3" name="AOSPA/android_packages_apps_Launcher3" remote="aospa" />
   <remove-project name="platform/packages/services/Telecomm" />
   <project path="packages/services/Telecomm" name="AOSPA/android_packages_services_Telecomm" remote="aospa" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="surya-project" />
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />

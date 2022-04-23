@@ -41,7 +41,7 @@ $ cd WORKSPACE
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
-$ repo init -u https://github.com/AOSPA/manifest -b sapphire
+$ repo init -u ssh://git@github.com/Surya-Project/manifest -b sapphire-wip
 ```
 
 ### Downloading the source tree ###
@@ -56,7 +56,7 @@ and their change histories.
 # The -j# option specifies the number of concurrent download threads to run.
 # 4 threads is a good number for most internet connections.
 # You may need to adjust this value if you have a particularly slow connection.
-$ repo sync --no-clone-bundle --current-branch --no-tags -j4
+$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 #### Syncing specific projects ####
